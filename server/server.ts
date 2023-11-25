@@ -1,13 +1,7 @@
-import { app } from './app';
+import {app} from './app';
+require('dotenv').config();
 
-require("dotenv").config();
-
-
-// Path: server/server.ts
+// Path: server/server.ts   
 app.listen(process.env.PORT, () => {
-    console.log(`Server is connected on port ${process.env.PORT}`)
-})
-
-
-
-
+  console.log(`Server listening with port ${process.env.PORT}`);
+});
